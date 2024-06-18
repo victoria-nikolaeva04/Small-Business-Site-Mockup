@@ -1,0 +1,11 @@
+:root {
+    --off-white: #FFFAF1;
+    --blue: #586994;
+    --grey: #7D869C;
+    --brown: #342A21;
+    --green: #99B8A3;
+}
+
+body{
+    background-color: var(--off-white);
+}
