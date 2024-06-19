@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
 :root {
     --off-white: #FFFAF1;
     --blue: #586994;
@@ -8,4 +13,126 @@
 
 body{
     background-color: var(--off-white);
+    margin: 0px
 }
+
+a{
+    text-decoration: none;
+}
+
+.text{
+    font-family: 'Roboto Condensed';
+}
+
+.logo{
+    border-radius: 50%;
+    width: 200px;
+    z-index: 2;
+    position: relative;
+    top: 10px;
+
+}
+
+#header-name{
+    font-family:'Roboto Condensed';
+    position: relative;
+    margin-left: 10px;
+    top: 24px;
+    z-index: 2;
+}
+
+#header-name h1 {
+    margin-bottom: 0;
+    font-weight:800;
+}
+
+#header-name h4 {
+    padding-top: 0;
+    font-style: italic;
+}
+
+.nav-bar{
+    position: relative;
+    margin-left: 10%;
+    margin-top: 70px;
+}
+
+.nav-button{
+    background-color: var(--blue);
+    color: var(--off-white);
+    border-radius: 16px;
+    margin-right: 15px;
+    width: 120px;
+    align-items: baseline;
+    padding: 8px 15px 8px 15px;
+    border-width: 0px;
+    font-size: 15px;
+}
+
+.icon{
+    border-radius: 100%;
+    background-color: var(--blue);
+    color: var(--off-white);
+    width:4%;
+    padding: 5px;
+}
+
+#sign-up-icon{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.header-container{
+    margin-top: 5px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-border{
+    background-color: var(--grey);
+    text-align: center;
+    font-size: 10px;
+    padding: 8px;
+    position: relative;
+    top: -33px;
+    z-index: 1;
+}
+
+#cart-icon{
+    position: absolute;
+    top: 200px;
+    right: 16px;
+}
+
+.home-body{
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+.title-box-container{
+    position: relative;
+    text-align: center;
+    background-color: var(--green);
+    color: var(--brown);
+    font-size: 150px;
+    width: 100%;
+    margin-top: 30px;   
+    border-radius: 25px;
+    padding: 20px 0px 20px 0px;
+}
+
+/* Need an image before adding this CSS */
+/* #home-title-card{
+    width: 50%;
+    margin-top: 30px;
+} */
+
+#title-card-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
