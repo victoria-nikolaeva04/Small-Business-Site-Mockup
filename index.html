@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="indexCSS.css">
     </head>
     <body>  
+        <!-- Header -->
         <header>
             <div class="header-container">
                 <img src="images/temp.png" alt="logo" class="logo">
@@ -41,21 +42,92 @@
         <!-- Work on Icons -->
         <img src="images/icons/user.png" alt="cart" class="icon" id="cart-icon">
         <div class="home-body">
-            <div class ="title-box-container">
+            <div class="title-box-container">
                 <img src="" id="home-title-card">
                 <div class="text" id="title-card-text">PIN UP</div>
             </div>
 
+            <!-- SlideShow of Best Seller Items -->
+            <div class="best-seller-container">
+                <h2 class="text" style="text-align: center;">Best Sellers</h2>
+                <div class="slideshow-row">
+                    <button id="prev-button"></button> 
+
+                    <!-- Items in the slideshow -->
+                        <div class="product-card">
+                            <img src="images/temp.png" alt="product-image" class="product-image">
+                            <span class="product-text">
+                                <p>$$$ || Product Name</p>
+                                <p></p>
+                            </span>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="images/temp.png" alt="product-image" class="product-image">
+                            <span class="product-text">
+                                <p>$$$ || Product Name</p>
+                                <p></p>
+                            </span>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="images/temp.png" alt="product-image" class="product-image">
+                            <span class="product-text">
+                                <p>$$$ || Product Name</p>
+                                <p></p>
+                            </span>
+                        </div>
+    
+                    <button id="next-button"></button> 
+                </div>
+                <button class="default-button" id="see-more-button">See More</button>
+            </div>
+
+            <div class="pinning-section">
+                <h2 class="text">PINNING'</h2>
+                <p style="margin-left: 25px;">Enamimal pins are more than accessories; they're tiny emblems of personality and story. 
+                    Our shop believes in celebrating individuality and creativity through these miniature canvases. 
+                    Each enamimal pin is a nod to craftsmanship and a testament to the power of visual storytelling. 
+                    Whether you wear them proudly on your lapel or gift them to a friend, these pins carry a message—a playful reminder that beauty and meaning 
+                    can be found in the smallest details. Discover our collection and find the pin that speaks to your unique style and spirit. 
+                    Embrace the joy of enamimal pins and let your accessories tell a story as unique as you are.
+                </p>
+            </div>
         </div>
         
 
         <br>
         <br>
-        <br>
-        <br>
 
         <footer>
-            <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a>
+            <div class="footer-container">
+                <div class="footer-column-logo">
+                    <img src="images/temp.png" alt="logo" class="logo" id="logo-footer">
+                    <p>copyright ©</p>
+                </div>
+
+                <div class="footer-column-links">
+                    <h4>Quick Links</h4>
+                    <li>
+                        <ul><a href="#">Home</a></ul>
+                        <ul><a href="#">Product</a></ul>
+                        <ul><a href="#">Contact</a></ul>
+                    </li>
+                </div>
+
+                <div class="footer-column-email">
+                    <h4>Intrested in Store Updates?</h4>
+                    <p>Sign Up!</p>
+
+                    <form>
+                        <input type="email" class="footer-input" required>
+                    </form>
+                    <br>
+
+                    <button class="default-button" style="float: right;">Sign Up</button>
+                </div>
+
+            </div>
         </footer>
     </body>
 </html>
