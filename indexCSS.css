@@ -59,8 +59,8 @@ a{
 }
 
 .nav-bar{
-    position: relative;
-    margin-left: 10%;
+    position: absolute;
+    margin-left: 45%;
     margin-top: 70px;
 }
 
@@ -152,6 +152,8 @@ a{
 .slideshow-row{
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: center;
 }
 
 #next-button{
@@ -211,6 +213,8 @@ a{
 
 .pinning-section{
     margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /* Footer */
