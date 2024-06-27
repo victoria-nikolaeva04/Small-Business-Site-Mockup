@@ -4,6 +4,7 @@
         <title>PIN UP</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Favicon Needed V V V -->
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> 
         <link rel="stylesheet" href="indexCSS.css">
@@ -18,18 +19,35 @@
                     <h1>PIN UP</h1>
                     <h4>Let's Put a Pin in It!</h4>
                 </div>
-                
-                <nav class="nav-bar">
-                    <a href="">
-                        <button class="nav-button">Home</button>
-                    </a>
-                    <a href="">
-                        <button class="nav-button">Product</button>
-                    </a>
-                    <a href="">
-                        <button class="nav-button">Contact</button>
-                    </a>
-                </nav>
+
+                <div class="topnav" id="myTopnav">
+                    <div class="nav-container">
+                        <nav class="nav-bar">
+                            <a href="">
+                                <button class="nav-button">Home</button>
+                            </a>
+                            <a href="">
+                                <button class="nav-button">Product</button>
+                            </a>
+                            <a href="">
+                                <button class="nav-button">Contact</button>
+                            </a>
+                        </nav>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" id="toggleIcon" onclick="toggleNav()">&#9776;</a>
+                </div>
+
+                <!-- JavaScript for Toggle Navigation Bar -->
+                <script>
+                    function toggleNav() {
+                      var x = document.getElementById("myTopnav");
+                      if (x.className === "topnav") {
+                        x.className += " responsive";
+                      } else {
+                        x.className = "topnav";
+                      }
+                    }
+                </script>
 
                 <!-- Work on Icons -->
                 <img src="images/icons/user.png" alt="signIn" class="icon" id="sign-up-icon"> 
