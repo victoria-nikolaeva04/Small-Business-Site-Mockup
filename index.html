@@ -20,7 +20,7 @@
                     <h4>Let's Put a Pin in It!</h4>
                 </div>
 
-                <div class="topnav" id="myTopnav">
+                <!-- <div class="toggle-nav" id="toggle-id"> </div> -->
                     <div class="nav-container">
                         <nav class="nav-bar">
                             <a href="">
@@ -33,18 +33,17 @@
                                 <button class="nav-button">Contact</button>
                             </a>
                         </nav>
-                    </div>
-                    <a href="javascript:void(0);" class="icon" id="toggleIcon" onclick="toggleNav()">&#9776;</a>
+                    <a href="javascript:void(0);" class="icon" id="toggle-icon" onclick="toggleNav()">&#9776;</a>
                 </div>
 
                 <!-- JavaScript for Toggle Navigation Bar -->
                 <script>
                     function toggleNav() {
-                      var x = document.getElementById("myTopnav");
-                      if (x.className === "topnav") {
-                        x.className += " responsive";
+                      var x = document.getElementById("toggle-id");
+                      if (x.className === "toggle-nav") {
+                        x.className += "responsive";
                       } else {
-                        x.className = "topnav";
+                        x.className = "toggle-nav";
                       }
                     }
                 </script>
@@ -127,8 +126,7 @@
                     Embrace the joy of enamimal pins and let your accessories tell a story as unique as you are.
                 </p>
             </div>
-        </div>
-        
+        </div>    
 
         <br>
         <br>

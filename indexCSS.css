@@ -67,10 +67,12 @@ a{
     /* border: 1px solid #342A21; */
 }
 
-.nav-bar{
-    /* position: absolute;
-    margin-left: 45%;
-    margin-top: 70px; */
+.toggle-nav{
+    position: absolute;
+    margin-left: 21%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
 }
 
 .nav-button{
@@ -117,7 +119,9 @@ a{
     z-index: 1;
 }
 
-
+#toggle-icon{
+    display: none;
+}
 
 /* Home Body */
 
