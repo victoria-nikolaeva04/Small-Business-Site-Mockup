@@ -16,7 +16,40 @@
         <!-- Header -->
         <header-component></header-component>
         <main>
-            <p> Contact Page</p>
+            <h2 id="pageTitle"> - Contact US - </h2>
+
+            <!-- Questions Form -->
+            <div class="outer-container">
+                <h4>Questions</h4>
+                <div class="inner-container">
+                    <form>
+                        <input type="text" id="fname" name="fname" placeholder="First Name">
+                        <input type="text" id="lname" name="lname" placeholder="Last Name">
+                        <input type="email" id="email" name="email" placeholder="Email">
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Phone Number">
+                        <label for="openText">Comments/Concerns:</label>
+                        <input type="text" id="openText" name="openText">
+                    </form>
+                    <button class="default-button" id="submit-button">Submit</button>
+                </div>
+            </div>
+
+            <!-- Contact Us -->
+             <div class="contact-container">
+                <h4>Contact Us:</h4>
+                <h5>PHONE NUMBER</h5>
+                <h5>ADDRESS</h5>
+             </div>
+
+             <!-- Social Media Listing -->
+              <div class="socials-container">
+                <h4>Social Media</h4>
+                <img src="images/icons/user.png" alt="instagram" class="icon" id="insta-icon">
+                <p>Instagram</p>
+                <img src="images/icons/user.png" alt="facebook" class="icon" id="facebook-icon">
+                <p>Facebook</p>
+                <img src="images/icons/user.png" alt="pintrest" class="icon" id="pintrest-icon">
+                <p>Pintrest</p>
         </main>
         <br>
         <br>
