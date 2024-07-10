@@ -6,38 +6,6 @@ class Header extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
         <style>
-            :root {
-                --off-white: #FFFAF1;
-                --blue: #586994;
-                --grey: #7D869C;
-                --brown: #342A21;
-                --green: #99B8A3;
-            }
-
-            body{
-                background-color: var(--off-white);
-                margin: 0px
-            }
-
-            a{
-                text-decoration: none;
-                color: var(--off-white);
-            }
-
-            .text{
-                font-family: 'Roboto Condensed';
-            }
-
-            .default-button{
-                background-color: var(--green);
-                color: var(--off-white);
-                border-radius: 16px;
-                border-width: 0;
-                padding: 7px 5px 7px 5px;
-                font-size: 15px;
-                cursor: pointer;
-            }
-
             .logo{
                 border-radius: 50%;
                 width: 200px;
@@ -71,6 +39,7 @@ class Header extends HTMLElement {
                 margin-top: 70px;
                 display: block;
             }
+
             .toggle-button {
                 display: none;
                 background: none;
@@ -117,42 +86,49 @@ class Header extends HTMLElement {
                 .toggle-button {
                     display: block;
                 }
+            }
 
-                .icon{
-                    border-radius: 100%;
-                    background-color: var(--blue);
-                    color: var(--off-white);
-                    width:3%;
-                    height: 5%;
-                    padding: 5px;
-                }
+            .icon{
+                border-radius: 100%;
+                background-color: var(--blue);
+                color: var(--off-white);
+                width:3%;
+                height: 5%;
+                padding: 5px;
+            }
 
-                #sign-up-icon{
-                    position: absolute;
-                    top: 8px;
-                    right: 16px;
-                }
+            #sign-up-icon{
+                position: absolute;
+                top: 8px;
+                right: 16px;
+            }
 
-                .header-container{
-                    margin-top: 15px;
-                    margin-left: 15px;
-                    display: flex;
-                    flex-direction: row;
-                }
+            .header-container{
+                margin-top: 15px;
+                margin-left: 15px;
+                display: flex;
+                flex-direction: row;
+            }
 
-                .header-border{
-                    background-color: var(--grey);
-                    text-align: center;
-                    font-size: 10px;
-                    padding: 8px;
-                    position: relative;
-                    top: -33px;
-                    z-index: 1;
-                }
+            .header-border{
+                background-color: var(--grey);
+                text-align: center;
+                font-size: 10px;
+                padding: 8px;
+                position: relative;
+                top: -33px;
+                z-index: 1;
+            }
 
-                #toggle-icon{
-                    display: none;
-                }
+            #toggle-icon{
+                display: none;
+            }
+
+            #cart-icon{
+                position: absolute;
+                top: 200px;
+                right: 16px;
+            }
         </style>
         <header>
             <div class="header-container">
@@ -177,6 +153,7 @@ class Header extends HTMLElement {
             </div>
         </header>
         <div class="header-border"></div>
+        <img src="images/icons/user.png" alt="cart" class="icon" id="cart-icon">
       `;
     }
   }
