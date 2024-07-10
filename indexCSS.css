@@ -29,6 +29,7 @@ a{
     border-width: 0;
     padding: 7px 5px 7px 5px;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .logo{
@@ -59,20 +60,18 @@ a{
 }
 
 .nav-container{
-    position: absolute;
-    margin-left: 21%;
+    position: relative;
+    margin-left: 3%;
     margin-top: 70px;
-    display: flex;
-    flex-direction: row;
-    /* border: 1px solid #342A21; */
+    display: block;
 }
-
-.toggle-nav{
-    position: absolute;
-    margin-left: 21%;
-    margin-top: 70px;
-    display: flex;
-    flex-direction: row;
+.toggle-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 5px;
 }
 
 .nav-button{
@@ -85,6 +84,33 @@ a{
     padding: 8px 15px 8px 15px;
     border-width: 0px;
     font-size: 15px;
+}
+
+/* Toggle Nav */
+@media screen and (max-width: 750px) {
+    .nav-container {
+        display: none;
+    }
+
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20%;
+        margin-bottom: 5%;
+        position: absolute;
+        left: 25px;
+        bottom: 50px;
+        
+    }
+
+    .nav-button{
+        margin-bottom: 5px;
+        width: 5%s;
+    }
+
+    .toggle-button {
+        display: block;
+    }
 }
 
 .icon{
@@ -145,7 +171,7 @@ a{
     width: 100%;
     margin-top: 50px;   
     border-radius: 25px;
-    padding: 20px 0px 45px 0px;
+    padding: 20px 0px 15px 0px;
 }
 
 /* Need an image before adding this CSS */
@@ -155,7 +181,7 @@ a{
 } */
 
 #title-card-text{
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -165,6 +191,8 @@ a{
 
 .best-seller-container{
     margin-top: 15px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .slideshow-row{
@@ -172,6 +200,7 @@ a{
     flex-direction: row;
     width: 100%;
     justify-content: center;
+    align-items: center;
 }
 
 #next-button{
@@ -198,6 +227,11 @@ a{
     margin-right: 20px;
     position: relative;
     top: 110px;
+}
+
+.slideshow-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .product-card{

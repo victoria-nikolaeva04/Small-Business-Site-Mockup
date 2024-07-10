@@ -8,6 +8,7 @@
         <!-- Favicon Needed V V V -->
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> 
         <link rel="stylesheet" href="indexCSS.css">
+        <script src="indexJS.js"></script>
     </head>
     <body>  
         <!-- Header -->
@@ -18,35 +19,16 @@
                 <div id="header-name">
                     <h1>PIN UP</h1>
                     <h4>Let's Put a Pin in It!</h4>
+                    <button class="toggle-button" onclick="toggleNav()">☰</button>
                 </div>
 
-                <!-- <div class="toggle-nav" id="toggle-id"> </div> -->
-                    <div class="nav-container">
-                        <nav class="nav-bar">
-                            <a href="">
-                                <button class="nav-button">Home</button>
-                            </a>
-                            <a href="">
-                                <button class="nav-button">Product</button>
-                            </a>
-                            <a href="">
-                                <button class="nav-button">Contact</button>
-                            </a>
-                        </nav>
-                    <a href="javascript:void(0);" class="icon" id="toggle-icon" onclick="toggleNav()">&#9776;</a>
+                <div class="nav-container" id="navContainer">
+                    <nav class="nav-bar" id="navBar">
+                        <a href="#" class="nav-link"><button class="nav-button">Home</button></a>
+                        <a href="#" class="nav-link"><button class="nav-button">Product</button></a>
+                        <a href="#" class="nav-link"><button class="nav-button">Contact</button></a>
+                    </nav>
                 </div>
-
-                <!-- JavaScript for Toggle Navigation Bar -->
-                <script>
-                    function toggleNav() {
-                      var x = document.getElementById("toggle-id");
-                      if (x.className === "toggle-nav") {
-                        x.className += "responsive";
-                      } else {
-                        x.className = "toggle-nav";
-                      }
-                    }
-                </script>
 
                 <!-- Work on Icons -->
                 <img src="images/icons/user.png" alt="signIn" class="icon" id="sign-up-icon"> 
@@ -69,48 +51,52 @@
                 <h2 class="text" style="text-align: center;">Best Sellers</h2>
                 <div class="slideshow-row">
                     <button id="prev-button"></button> 
+                    <div id="slideshow-row">
 
-                    <!-- Items in the slideshow -->
-                        <div class="product-card">
-                            <img src="images/temp.png" alt="product-image" class="product-image">
-                            <span class="product-text">
-                                <p>$$$ || Product Name</p>
-                                <p></p>
-                            </span>
-                        </div>
+                        <!-- Items in the slideshow -->
+                        <div class="slideshow-wrapper">
+                            <div class="product-card">
+                                <img src="images/temp.png" alt="product-image" class="product-image">
+                                <span class="product-text">
+                                    <p>$$$ || Product Name</p>
+                                    <p></p>
+                                </span>
+                            </div>
 
-                        <div class="product-card">
-                            <img src="images/temp.png" alt="product-image" class="product-image">
-                            <span class="product-text">
-                                <p>$$$ || Product Name</p>
-                                <p></p>
-                            </span>
-                        </div>
+                            <div class="product-card">
+                                <img src="images/temp.png" alt="product-image" class="product-image">
+                                <span class="product-text">
+                                    <p>$$$ || Product Name</p>
+                                    <p></p>
+                                </span>
+                            </div>
 
-                        <div class="product-card">
-                            <img src="images/temp.png" alt="product-image" class="product-image">
-                            <span class="product-text">
-                                <p>$$$ || Product Name</p>
-                                <p></p>
-                            </span>
-                        </div>
+                            <div class="product-card">
+                                <img src="images/temp.png" alt="product-image" class="product-image">
+                                <span class="product-text">
+                                    <p>$$$ || Product Name</p>
+                                    <p></p>
+                                </span>
+                            </div>
 
-                        <div class="product-card">
-                            <img src="images/temp.png" alt="product-image" class="product-image">
-                            <span class="product-text">
-                                <p>$$$ || Product Name</p>
-                                <p></p>
-                            </span>
-                        </div>
+                            <div class="product-card">
+                                <img src="images/temp.png" alt="product-image" class="product-image">
+                                <span class="product-text">
+                                    <p>$$$ || Product Name</p>
+                                    <p></p>
+                                </span>
+                            </div>
 
-                        <div class="product-card">
-                            <img src="images/temp.png" alt="product-image" class="product-image">
-                            <span class="product-text">
-                                <p>$$$ || Product Name</p>
-                                <p></p>
-                            </span>
+                            <div class="product-card">
+                                <img src="images/temp.png" alt="product-image" class="product-image">
+                                <span class="product-text">
+                                    <p>$$$ || Product Name</p>
+                                    <p></p>
+                                </span>
+                            </div>
                         </div>
-    
+                    </div>
+
                     <button id="next-button"></button> 
                 </div>
                 <button class="default-button" id="see-more-button">See More</button>
