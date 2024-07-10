@@ -128,9 +128,9 @@ class Footer extends HTMLElement {
                 <div class="footer-column-links">
                     <h4>Quick Links</h4>
                     <ul style="margin-top: 3px;">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
 

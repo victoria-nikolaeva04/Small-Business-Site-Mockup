@@ -166,9 +166,9 @@ class Header extends HTMLElement {
 
                 <div class="nav-container" id="navContainer">
                     <nav class="nav-bar" id="navBar">
-                        <a href="#" class="nav-link"><button class="nav-button">Home</button></a>
-                        <a href="#" class="nav-link"><button class="nav-button">Product</button></a>
-                        <a href="#" class="nav-link"><button class="nav-button">Contact</button></a>
+                        <a href="index.html" class="nav-link"><button class="nav-button">Home</button></a>
+                        <a href="product.html" class="nav-link"><button class="nav-button">Product</button></a>
+                        <a href="contact.html" class="nav-link"><button class="nav-button">Contact</button></a>
                     </nav>
                 </div>
 
