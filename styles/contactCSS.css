@@ -136,9 +136,24 @@ a{
 .contact-container hr{
     margin:3px;
     border-width: 2px;
+    box-shadow: none;
 }
 
 .socials-container{
     text-align: center;
     margin-top: 5px;
+    color: var(--brown);
+}
+
+.instagram, .facebook, .pintrest{
+    display: flex;
+    margin-left: 10%;
+    padding-left: 10px;
+}
+
+.insta-icon, .facebook-icon, .pintrest-icon{
+    width: 15%;
+    margin-bottom: 25px;
+    margin-right: 25%;
+
 }
