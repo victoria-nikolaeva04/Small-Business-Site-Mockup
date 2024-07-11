@@ -11,6 +11,7 @@
         <script src="indexJS.js"></script>
         <script src="components/header.js" type="text/javascript" defer></script>
         <script src="components/footer.js" type="text/javascript" defer></script>
+        <script src="components/card.js" type="text/javascript" defer></script>
     </head>
     <body>
         <!-- Header -->
@@ -18,8 +19,40 @@
 
         <main>
             <div>
-                <h2 id="pageTitle"> Products</h2>
+                <h2 id="pageTitle">- Products -</h2>
             </div>
+
+            <div class="product-grid">
+                <!-- Search Filter -->
+                <div class="filter-search">
+                    <h4>Search Filter:</h4>
+                    <hr>
+                    <form>
+                        <input type="checkbox" id="product1" name="product1" value="">
+                        <label for="product1">Filter opt. 1</label><br>
+
+                        <input type="checkbox" id="product1" name="product1" value="">
+                        <label for="product1">Filter opt. 1</label><br>
+
+                        <input type="checkbox" id="product1" name="product1" value="">
+                        <label for="product1">Filter opt. 1</label><br>
+                    </form>
+                </div>
+
+                <!-- The Catolog of Products -->
+                <div class="product-view">
+                    <card-component class="grid-item"></card-component>
+                    <card-component class="grid-item"></card-component>
+                    <card-component class="grid-item"></card-component>
+                    <card-component class="grid-item"></card-component>
+                    <card-component class="grid-item"></card-component>
+                    <card-component class="grid-item"></card-component>
+                    <card-component class="grid-item"></card-component>
+                    <card-component class="grid-item"></card-component>
+                </div>
+            </div>
+
+            
             
         </main>
         <br>

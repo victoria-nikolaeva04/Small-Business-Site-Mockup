@@ -31,3 +31,57 @@ a{
     font-size: 15px;
     cursor: pointer;
 }
+
+.default-button:hover{
+    
+}
+
+/* Content Page */
+
+#pageTitle{
+    text-align: center;
+    font-family: 'Roboto Condensed';
+    font-size: 40px;
+    color: var(--brown);
+}
+
+.product-grid {
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.filter-search {
+    flex: 1;
+    max-width: 18%;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: var(--green);
+    border-radius: 16px;
+}
+
+.filter-search h4{
+    text-align: center;
+    color: var(--brown);
+    margin-bottom: 3px;
+}
+
+.filter-search hr{
+    border-color: var(--brown);
+    border-width: 2px;
+    margin-bottom: 9px;
+}
+
+.product-view {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 15px;
+    column-gap: 15px;
+    margin-left: 5%;
+}
+
+.grid-item{
+    display: block;
+}
