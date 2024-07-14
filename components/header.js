@@ -88,6 +88,10 @@ class Header extends HTMLElement {
                 }
             }
 
+            .nav-button:hover{
+                background-color: #5b5894;
+            }
+
             .icon{
                 border-radius: 100%;
                 background-color: var(--blue);

@@ -41,6 +41,11 @@ a{
     cursor: pointer;
 }
 
+.default-button:hover{
+    background-color: rgb(109, 149, 122);
+}
+
+
 /* Contact Us Page */
 
 #pageTitle{
