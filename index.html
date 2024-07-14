@@ -28,62 +28,28 @@
                 <div class="text" id="title-card-text">- PIN UP -</div>
             </div>
 
+            <!DOCTYPE html>
+
             <!-- SlideShow of Best Seller Items -->
             <div class="best-seller-container">
                 <h2 class="text" style="text-align: center;">Best Sellers</h2>
                 <div class="slideshow-row">
-                    <button id="prev-button"></button> 
-                    <div id="slideshow-row">
-
+                    <button id="prev-button">&#9664;</button> 
+                    <div id="slideshow-wrapper">
                         <!-- Items in the slideshow -->
-                        <div class="slideshow-wrapper">
-                            <div class="product-card">
-                                <img src="images/temp.png" alt="product-image" class="product-image">
-                                <span class="product-text">
-                                    <p>$$$ || Product Name</p>
-                                    <p></p>
-                                </span>
-                            </div>
-
-                            <div class="product-card">
-                                <img src="images/temp.png" alt="product-image" class="product-image">
-                                <span class="product-text">
-                                    <p>$$$ || Product Name</p>
-                                    <p></p>
-                                </span>
-                            </div>
-
-                            <!-- <div class="product-card">
-                                <img src="images/temp.png" alt="product-image" class="product-image">
-                                <span class="product-text">
-                                    <p>$$$ || Product Name</p>
-                                    <p></p>
-                                </span>
-                            </div> -->
-
-                            <card></card>
-
-                            <div class="product-card">
-                                <img src="images/temp.png" alt="product-image" class="product-image">
-                                <span class="product-text">
-                                    <p>$$$ || Product Name</p>
-                                    <p></p>
-                                </span>
-                            </div>
-
-                            <div class="product-card">
-                                <img src="images/temp.png" alt="product-image" class="product-image">
-                                <span class="product-text">
-                                    <p>$$$ || Product Name</p>
-                                    <p></p>
-                                </span>
-                            </div>
+                        <div class="slideshow-content">
+                            <card-component class="grid-item" product-image="images/temp.png" product-text="Product 1 || $19.99"></card-component>
+                            <card-component class="grid-item" product-image="images/temp.png" product-text="Product 2 || $29.99"></card-component>
+                            <card-component class="grid-item" product-image="images/temp.png" product-text="Product 3 || $19.99"></card-component>
+                            <card-component class="grid-item" product-image="images/temp.png" product-text="Product 4 || $29.99"></card-component>
+                            <card-component class="grid-item" product-image="images/temp.png" product-text="Product 5 || $19.99"></card-component>
+                            <card-component class="grid-item" product-image="images/temp.png" product-text="Product 6 || $19.99"></card-component>
+                            <card-component class="grid-item" product-image="images/temp.png" product-text="Product 7 || $19.99"></card-component>
                         </div>
                     </div>
-
-                    <button id="next-button"></button> 
+                    <button id="next-button">&#9654;</button> 
                 </div>
-                <button class="default-button" id="see-more-button">See More</button>
+                <a href="temp.html"><button class="default-button" id="see-more-button">See More</button></a>
             </div>
 
             <div class="pinning-section">
