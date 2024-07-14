@@ -111,76 +111,6 @@ a{
     transform: translate(-50%, -50%);
 }
 
-/* Best Seller Section */
-
-/* .best-seller-container{
-    margin-top: 15px;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.slideshow-row{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-#next-button{
-    height: 0;
-    width: 0;
-    border-left: 15px solid var(--grey);
-    border-right: 15px solid transparent;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    background-color: var(--off-white);
-    margin-left: 20px;
-    position: relative;
-    top: 110px;
-}
-
-#prev-button{
-    height: 0;
-    width: 0;
-    border-right: 15px solid var(--grey);
-    border-left: 15px solid transparent;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    background-color: var(--off-white);
-    margin-right: 20px;
-    position: relative;
-    top: 110px;
-}
-
-.slideshow-wrapper {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.product-card{
-    background-color: var(--blue);
-    width: 190px;
-    height: 230px;
-    padding: .8em;
-    position: relative;
-    overflow: visible;
-    border-radius: 16px;
-    margin-right: 25px;
-    margin-left: 20px;
-}
-
-.product-image{
-    height: 80%;
-    width: 100%;
-    border-radius: 8px;
-}
-
-.product-text{
-    color: var(--off-white);
-}
-*/
-
 .best-seller-container {
     text-align: center;
     padding: 20px;
@@ -208,41 +138,6 @@ a{
     padding: 10px;
 }
 
-card-component {
-    display: block;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-card-component img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* Buttons */
-#prev-button, #next-button {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    outline: none;
-}
-
-#see-more-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    outline: none;
-}
-
 /* Responsive styling */
 @media (max-width: 768px) {
     .grid-item {
@@ -254,6 +149,22 @@ card-component img {
     .grid-item {
         flex: 0 0 100%; /* Show 1 item at a time on mobile */
     }
+}
+
+#prev-button, #next-button {
+    background-color: var(--off-white);
+    color: var(--grey);
+    border: 1px solid var(--grey);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+}
+
+#prev-button:hover, #next-button:hover{
+    border: 3px solid var(--grey);
+    box-shadow: #586994;
 }
 
 #see-more-button{
