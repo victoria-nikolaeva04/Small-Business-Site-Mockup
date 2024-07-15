@@ -8,7 +8,7 @@
         <!-- Favicon Needed V V V -->
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> 
         <link rel="stylesheet" href="styles/productCSS.css">
-        <script src="indexJS.js"></script>
+        <script src="JS/productJS.js"></script>
         <script src="components/header.js" type="text/javascript" defer></script>
         <script src="components/footer.js" type="text/javascript" defer></script>
         <script src="components/card.js" type="text/javascript" defer></script>
@@ -21,65 +21,73 @@
             <div>
                 <h2 id="pageTitle">- Products -</h2>
             </div>
-
             <div class="product-grid">
                 <!-- Search Filter -->
                 <div class="filter-search">
                     <h4>Search Filter:</h4>
                     <hr>
-                    <form>
+                    <form id="filterSearch">
                         <h5>Type of Pin:</h5>
-                        <input type="checkbox" id="product1" name="product1" value="">
-                        <label for="product1">Enamial Pins</label><br>
-
-                        <input type="checkbox" id="product1" name="product1" value="">
-                        <label for="product1">Button Pins</label><br>
-
+                            <input type="checkbox" id="enamelPins" name="pinType" value="enamel">
+                            <label for="enamelPins">Enamel Pins</label><br>
+        
+                            <input type="checkbox" id="buttonPins" name="pinType" value="button">
+                            <label for="buttonPins">Button Pins</label><br>
+        
                         <br>
-                        <h5>Catagories:</h5>
-
-                        <input type="checkbox" id="product1" name="product1" value="">
-                        <label for="product1">Filter opt. 1</label><br>
-
-                        <input type="checkbox" id="product1" name="product1" value="">
-                        <label for="product1">Filter opt. 1</label><br>
-
-                        <input type="checkbox" id="product1" name="product1" value="">
-                        <label for="product1">Filter opt. 1</label><br>
-
-                        <input type="checkbox" id="product1" name="product1" value="">
-                        <label for="product1">Filter opt. 1</label><br>
+                        <h5>Categories:</h5>
+                            <input type="checkbox" id="anime" name="category" value="anime">
+                            <label for="anime">Anime</label><br>
+        
+                            <input type="checkbox" id="food" name="category" value="food">
+                            <label for="food">Food</label><br>
+        
+                            <input type="checkbox" id="music" name="category" value="music">
+                            <label for="music">Music</label><br>
+        
+                            <input type="checkbox" id="nature" name="category" value="nature">
+                            <label for="nature">Nature</label><br>
+        
+                            <input type="checkbox" id="colorful" name="category" value="colorful">
+                            <label for="colorful">Colorful</label><br>
+        
+                        <br>
+                        <h5>Prices:</h5>
+                            <input type="checkbox" id="lessThan3" name="price" value="lessThan3">
+                            <label for="lessThan3">Less than $3</label><br>
+        
+                            <input type="checkbox" id="between3and5" name="price" value="between3and5">
+                            <label for="between3and5">Between $3-$5</label><br>
+        
+                            <input type="checkbox" id="over5" name="price" value="over5">
+                            <label for="over5">Over $5</label><br>
                     </form>
                 </div>
-
-                <!-- The Catolog of Products -->
-                <div class="product-view">
-                    <card-component class="grid-item" product-image="images/temp.png" product-text="Product 1 || $19.99"></card-component>
-                    <card-component class="grid-item" product-image="images/temp.png" product-text="Product 2 || $29.99"></card-component>
-                    <card-component class="grid-item" product-image="images/temp.png" product-text="Product 3 || $29.99"></card-component>
-                    <card-component class="grid-item" product-image="images/temp.png" product-text="Product 4 || $29.99"></card-component>
-                    <card-component class="grid-item" product-image="images/temp.png" product-text="Product 5 || $29.99"></card-component>
-                    <card-component class="grid-item" product-image="images/temp.png" product-text="Product 6 || $29.99"></card-component>
-                    <card-component class="grid-item" product-image="images/temp.png" product-text="Product 7 || $29.99"></card-component>
-                    <card-component class="grid-item" product-image="images/temp.png" product-text="Product 8 || $29.99"></card-component>
-                    <card-component class="grid-item" product-image="images/temp.png" product-text="Product 9 || $29.99"></card-component>
-                    <card-component class="grid-item" product-image="images/temp.png" product-text="Product 10 || $29.99"></card-component>
-                    <card-component class="grid-item" product-image="images/temp.png" product-text="Product 11 || $29.99"></card-component>
-                    <card-component class="grid-item" product-image="images/temp.png" product-text="Product 12 || $29.99"></card-component>
-                    <card-component class="grid-item" product-image="es/temp.png" product-text="Product 13 || $29.99"></card-component>
-                    <card-component class="grid-item" product-image="images/temp.png" product-text="Product 14 || $29.99"></card-component>
-                    <card-component class="grid-item" product-image="images/temp.png" product-text="Product 15 || $29.99"></card-component>
-                    <card-component class="grid-item" product-image="images/temp.png" product-text="Product 16 || $29.99"></card-component>
-                    <card-component class="grid-item" product-image="images/temp.png" product-text="Product 17 || $29.99"></card-component>
-                    <card-component class="grid-item" product-image="images/temp.png" product-text="Product 18 || $29.99"></card-component>
-                    <card-component class="grid-item" product-image="images/temp.png" product-text="Product 19 || $29.99"></card-component>
-                    <card-component class="grid-item" product-image="images/temp.png" product-text="Product 20 || $29.99"></card-component>
-
+        
+                <!-- The Catalog of Products -->
+                <div class="product-view" id="productView">
+                    <div class="grid-item enamel anime" data-price="over5"><card-component product-image="images/products/JojoBAPin.webp" product-text="Jojo Bizarre Adventure || $7.99"></card-component></div>
+                    <div class="grid-item enamel music" data-price="between3and5"><card-component product-image="images/products/GunsRosesPin.webp" product-text="Guns & Roses || $3.99"></card-component></div>
+                    <div class="grid-item enamel food" data-price="lessThan3"><card-component product-image="images/products/HamburgerPin.jpg" product-text="Hamburger || $2.99"></card-component></div>
+                    <div class="grid-item enamel food" data-price="between3and5"><card-component product-image="images/products/HotDogPin.webp" product-text="Hotdog || $3.99"></card-component></div>
+                    <div class="grid-item enamel anime" data-price="over5"><card-component product-image="images/products/HowlsPin.webp" product-text="Howls Moving Castle || $5.99"></card-component></div>
+                    <div class="grid-item button colorful anime" data-price="between3and5"><card-component product-image="images/products/JasmineTeaPin.webp" product-text="Uncle Iroh Jasmine Tea || $4.99"></card-component></div>
+                    <div class="grid-item enamel food colorful" data-price="between3and5"><card-component product-image="images/products/MilkPin.webp" product-text="Goose Milk Pin || $4.99"></card-component></div>
+                    <div class="grid-item enamel nature" data-price="between3and5"><card-component product-image="images/products/NaturePin.webp" product-text="'Keep It Simple' || $4.99"></card-component></div>
+                    <div class="grid-item button music" data-price="lessThan3"><card-component product-image="images/products/PanicPin.webp" product-text="Panic @ the Disco || $2.99"></card-component></div>
+                    <div class="grid-item enamel food" data-price="lessThan3"><card-component product-image="images/products/PizzaPin.webp" product-text="Pizza || $2.99"></card-component></div>
+                    <div class="grid-item enamel nature" data-price="between3and5"><card-component product-image="images/products/PlantPin.webp" product-text="Potted Plant || $4.99"></card-component></div>
+                    <div class="grid-item button music" data-price="between3and5"><card-component product-image="images/products/QueenPin.webp" product-text="Queen Band || $3.99"></card-component></div>
+                    <div class="grid-item enamel music" data-price="over5"><card-component product-image="images/products/SlimShadyPin.webp" product-text="Slim Shady Nametag || $5.99"></card-component></div>
+                    <div class="grid-item button food colorful" data-price="between3and5"><card-component product-image="images/products/SnowConePin.webp" product-text="Slo-Cone Turtle || $3.99"></card-component></div>
+                    <div class="grid-item button colorful" data-price="between3and5"><card-component product-image="images/products/SquidwardPin.webp" product-text="Squidward's Art || $3.99"></card-component></div>
+                    <div class="grid-item button colorful" data-price="between3and5"><card-component product-image="images/products/StitchPin.webp" product-text="Hawaiian Stitch || $4.99"></card-component></div>
+                    <div class="grid-item button colorful nature" data-price="lessThan3"><card-component product-image="images/products/SunPin.webp" product-text="Sunny Swirl || $1.99"></card-component></div>
+                    <div class="grid-item enamel anime" data-price="between3and5"><card-component product-image="images/products/TotoroPin.webp" product-text="My Neighbor Totoro || $4.99"></card-component></div>
+                    <div class="grid-item enamel colorful nature" data-price="over5"><card-component product-image="images/products/WavePin.webp" product-text="Starry Night X Great Wave || $6.99"></card-component></div>
+                    <div class="grid-item enamel anime" data-price="over5"><card-component product-image="images/products/YuriOnIcePin.webp" product-text="Yuri on Ice || $8.99"></card-component></div>
                 </div>
-            </div>
-
-            
-            
+            </div>             
         </main>
         <br>
         <br>

@@ -154,11 +154,13 @@ a{
     display: flex;
     margin-left: 10%;
     padding-left: 10px;
+    
 }
 
 .insta-icon, .facebook-icon, .pintrest-icon{
-    width: 15%;
+    width: 40%;
     margin-bottom: 25px;
     margin-right: 25%;
+    cursor: pointer;
 
 }
