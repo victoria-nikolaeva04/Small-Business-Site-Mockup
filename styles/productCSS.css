@@ -62,6 +62,18 @@ a{
     border-radius: 16px;
 }
 
+.filter-search input{
+    margin: 20px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.filter-search h5{
+    text-align: left;
+    color: var(--brown);
+    margin-bottom: 3px;
+}
+
 .filter-search h4{
     text-align: center;
     color: var(--brown);
@@ -70,7 +82,7 @@ a{
 
 .filter-search hr{
     border-color: var(--brown);
-    border-width: 2px;
+    border-width: 1px;
     margin-bottom: 9px;
 }
 
